@@ -8,14 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="images/ebac_logo.svg" alt="EBAC">
             <p class="hero__text">
-                O maior evento de tecnologia do Brasil começa em 10d 12h 20m 15s
+                O maior evento de tecnologia do Brasil começa em <span id="contador"></span>
             </p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
@@ -38,6 +39,52 @@
             </div>
         </div>
     </header>
+    <section class="evento evento--frontend">
+        <div class="container" data-aos="fade-right">
+            <div class="evento__details">
+                <h2 class="evento__details__title">Front-end</h2>
+                <p class="evento__details__description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem facere vel beatae. Tempora libero nihil atque adipisci doloribus laudantium asperiores excepturi ratione soluta modi. Dignissimos impedit quia et minus libero?
+                </p>
+            </div>
+            <img class="evento__image" src="./images/frontend.png" alt="Front-end">
+        </div>
+    </section>
+    <section class="evento evento--ui-ux evento--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="evento__details">
+                <h2 class="evento__details__title">UI/UX</h2>
+                <p class="evento__details__description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem facere vel beatae. Tempora libero nihil atque adipisci doloribus laudantium asperiores excepturi ratione soluta modi. Dignissimos impedit quia et minus libero?
+                </p>
+            </div>
+            <img class="evento__image" src="./images/ui-ux.png" alt="UI/UX">
+        </div>
+    </section>
+    <section class="evento evento--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="evento__details">
+                <h2 class="evento__details__title">Data Science</h2>
+                <p class="evento__details__description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem facere vel beatae. Tempora libero nihil atque adipisci doloribus laudantium asperiores excepturi ratione soluta modi. Dignissimos impedit quia et minus libero?
+                </p>
+            </div>
+            <img class="evento__image" src="./images/data.png" alt="Data Science">
+        </div>
+    </section>
+    <section class="evento evento--backend evento--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="evento__details">
+                <h2 class="evento__details__title">Backend</h2>
+                <p class="evento__details__description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem facere vel beatae. Tempora libero nihil atque adipisci doloribus laudantium asperiores excepturi ratione soluta modi. Dignissimos impedit quia et minus libero?
+                </p>
+            </div>
+            <img class="evento__image" src="./images/backend.png" alt="Back-end">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
